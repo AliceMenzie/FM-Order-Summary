@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-color: hsl(225, 100%, 94%);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container {
+  width: 375px;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: white;
+  overflow: hidden;
+  position: fixed;
+  box-shadow: 0 16px 16px -4px hsla(224, 23%, 55%, 0.25);
+}
+
+.container img {
+  position: relative;
+  top: -20px;
+  left: -45px;
+}
+.container h1 {
+  text-align: center;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.summary {
+  text-align: center;
+  align-items: center;
+  padding: 0.5rem 1.5rem;
+  color: hsl(224, 23%, 55%);
+}
+
+.sub {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 0.5rem;
+  margin: 1rem 0rem;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 5px;
+}
+
+.sub div:nth-child(1) {
+  content: url(./images/icon-music.svg);
+  margin: 1rem;
+}
+.sub div:nth-child(2) {
+  margin-right: 6rem;
+}
+.sub div:nth-child(2) h1 {
+  font-size: 16px;
+}
+.sub div:nth-child(2) p {
+  margin-top: 0;
+  color: hsl(224, 23%, 55%);
+}
+.sub div:nth-child(3) {
+  float: right;
+}
+
+.sub .change-sub {
+  font-weight: 500;
+  color: hsl(245, 75%, 52%);
+}
+.sub .change-sub:active {
+  color: rgb(118, 108, 241);
+  text-decoration: none;
+}
+
+.btn-payment {
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+  background: hsl(245, 75%, 52%);
+  color: white;
+  padding: 15px 0px;
+  font-family: inherit;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 4px 8px 10px rgba(118, 108, 241, 0.3);
+}
+
+.btn-payment:active {
+  background: rgb(118, 108, 241);
+}
+
+.btn-cancel {
+  display: inline-block;
+  align-items: center;
+}
+
+.cancel-container {
+  text-align: center;
+  margin: 1rem;
+}
+
+.cancel-container a {
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;
+}
+.cancel-container a:active {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+
+.attribution {
+    font-size: 12px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 475px) {
+    body {
+        background-image: url(./images/pattern-background-mobile.svg);
+    }
+  }
