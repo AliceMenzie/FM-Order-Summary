@@ -78,12 +78,14 @@ body {
 }
 
 .sub .change-sub {
-  font-weight: 500;
+  font-weight: 700;
+  font-size: 14px;
   color: hsl(245, 75%, 52%);
 }
-.sub .change-sub:active {
+.sub .change-sub:hover {
   color: rgb(118, 108, 241);
   text-decoration: none;
+  font-weight: 500;
 }
 
 .btn-payment {
@@ -100,7 +102,7 @@ body {
   box-shadow: 4px 8px 10px rgba(118, 108, 241, 0.3);
 }
 
-.btn-payment:active {
+.btn-payment:hover {
   background: rgb(118, 108, 241);
 }
 
@@ -119,7 +121,7 @@ body {
   color: hsl(224, 23%, 55%);
   font-weight: 700;
 }
-.cancel-container a:active {
+.cancel-container a:hover {
   text-decoration: none;
   color: black;
   font-weight: 700;
